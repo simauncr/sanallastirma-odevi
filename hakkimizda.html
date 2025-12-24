@@ -2,42 +2,52 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Hakkımızda - Sanallaştırma Ödevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Sanallaştırma Projesi</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background-color: #f0f0f0; }
-        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
-        .container { background: white; padding: 20px; border-radius: 8px; }
-        ul { line-height: 1.6; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fce4ec; color: #333; }
+        nav { background-color: #880e4f; padding: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #f48fb1; }
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(136, 14, 79, 0.15); }
+        h1 { color: #880e4f; border-bottom: 2px solid #f8bbd0; padding-bottom: 10px; display: inline-block; }
+        h3 { color: #ad1457; margin-top: 30px; }
+        p { line-height: 1.6; color: #555; }
+        .highlight { background-color: #fce4ec; padding: 15px; border-left: 5px solid #d81b60; border-radius: 4px; margin: 20px 0; font-style: italic; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
     <div class="container">
         <h1>Hakkımızda</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Anasayfa</a>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="hizmetler.html">Hizmetler</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="iletisim.html">İletişim</a>
-        </nav>
-        <hr>
         
-        <h3>Biz Kimiz?</h3>
-        <p>Bu web sitesi, Sakarya Uygulamalı Bilimler Üniversitesi, Bilişim Teknolojileri Meslek Yüksekokulu öğrencisi tarafından <strong>Sanallaştırma Platformları</strong> dersi final ödevi kapsamında hazırlanmıştır.</p>
+        <h3>Proje Vizyonu</h3>
+        <p>Bu web sitesi, Bilişim Teknolojileri Meslek Yüksekokulu öğrencisi tarafından <strong>Sanallaştırma Platformları</strong> dersi final ödevi kapsamında geliştirilmiştir. Amacımız, teorik bilgiyi pratik bulut uygulamalarıyla birleştirmektir.</p>
         
-        <h3>Vizyonumuz</h3>
-        <p>Bulut bilişim teknolojilerini kullanarak, ölçeklenebilir ve erişilebilir web çözümleri üretmek ve bu alanda teknik yetkinlik kazanmaktır.</p>
+        <div class="highlight">
+            "Teknoloji sadece kod yazmak değil, geleceği inşa etmektir."
+        </div>
 
-        <h3>Neden Bu Proje?</h3>
-        <ul>
-            <li>Sanal sunucu (VPS) yönetimini öğrenmek.</li>
-            <li>Web sunucusu kurulumlarını (Nginx/Apache) deneyimlemek.</li>
-            <li>Bulut tabanlı sistemlerin çalışma mantığını kavramak.</li>
+        <h3>Hedeflerimiz</h3>
+        <ul style="color: #555; line-height: 1.8;">
+            <li>☁️ AWS EC2 Yönetimi konusunda uzmanlaşmak.</li>
+            <li>🌐 Linux tabanlı web sunucusu (Nginx) kurulumunu deneyimlemek.</li>
+            <li>🚀 GitHub entegrasyonu ile CI/CD süreçlerini öğrenmek.</li>
         </ul>
 
-        <br>
-        <p><i>Öğrenci: [Senin Adın]</i></p>
+        <div class="footer">
+            <p>Öğrenci: <strong>[Senin Adın]</strong></p>
+        </div>
     </div>
+
 </body>
 </html>

@@ -2,53 +2,69 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Hizmetler - Sanallaştırma Ödevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler | Sanallaştırma Projesi</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background-color: #f0f0f0; }
-        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
-        .container { background: white; padding: 20px; border-radius: 8px; }
-        .service-item { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .service-item:last-child { border-bottom: none; }
-        h3 { color: #0056b3; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fce4ec; color: #333; }
+        nav { background-color: #880e4f; padding: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #f48fb1; }
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(136, 14, 79, 0.15); }
+        h1 { color: #880e4f; text-align: center; }
+        
+        /* Hizmet Kartları Tasarımı */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { background: #fff0f6; border: 1px solid #f8bbd0; border-radius: 10px; padding: 20px; text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(216, 27, 96, 0.2); background: #fff; border-color: #d81b60; }
+        .card h3 { color: #ad1457; }
+        .card-icon { font-size: 40px; margin-bottom: 10px; display: block; }
+        
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
     <div class="container">
-        <h1>Hizmetlerimiz</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Anasayfa</a>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="hizmetler.html">Hizmetler</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="iletisim.html">İletişim</a>
-        </nav>
-        <hr>
+        <h1>Neler Yapıyoruz?</h1>
         
-        <p>Aşağıda sanallaştırma ve web teknolojileri alanında sunduğumuz temel hizmetler yer almaktadır:</p>
-        
-        <div class="service-item">
-            <h3>☁️ Bulut Sunucu Yönetimi (AWS & Google Cloud)</h3>
-            <p>Sanal sunucuların kurulumu, konfigürasyonu ve güvenliğinin sağlanması işlemleri.</p>
+        <div class="services-grid">
+            <div class="card">
+                <span class="card-icon">☁️</span>
+                <h3>Bulut Yönetimi</h3>
+                <p>AWS ve Google Cloud üzerinde sanal sunucu yapılandırması.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">💻</span>
+                <h3>Web Hosting</h3>
+                <p>Nginx ve Apache sunucularında yüksek performanslı yayın.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">🛡️</span>
+                <h3>Siber Güvenlik</h3>
+                <p>Güvenlik duvarı (Firewall) kuralları ve SSL sertifikaları.</p>
+            </div>
+            
+             <div class="card">
+                <span class="card-icon">💾</span>
+                <h3>Veri Yedekleme</h3>
+                <p>Verilerin güvenli alanlarda düzenli depolanması.</p>
+            </div>
         </div>
 
-        <div class="service-item">
-            <h3>🖥️ Web Barındırma (Hosting)</h3>
-            <p>Statik ve dinamik web sitelerinin yayınlanması için gerekli altyapı hizmetleri.</p>
+        <div class="footer">
+            <p>Öğrenci: <strong>[Senin Adın]</strong></p>
         </div>
-
-        <div class="service-item">
-            <h3>💾 Veri Yedekleme ve Kurtarma</h3>
-            <p>Kritik verilerin düzenli olarak yedeklenmesi ve olası arıza durumunda geri yüklenmesi.</p>
-        </div>
-
-        <div class="service-item">
-            <h3>🔒 Ağ Güvenliği</h3>
-            <p>Sunuculara erişim izinlerinin (SSH, HTTP) düzenlenmesi ve güvenlik duvarı ayarları.</p>
-        </div>
-
-        <br>
-        <p><i>Öğrenci: [Senin Adın]</i></p>
     </div>
+
 </body>
 </html>

@@ -2,27 +2,58 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Anasayfa - Sanallaştırma Ödevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa | Sanallaştırma Projesi</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background-color: #f0f0f0; }
-        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
-        .container { background: white; padding: 20px; border-radius: 8px; }
+        /* GENEL TASARIM AYARLARI (Tüm sayfalarda ortak) */
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fce4ec; color: #333; }
+        
+        /* Navbar (Menü) */
+        nav { background-color: #880e4f; /* Koyu Bordo */ padding: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 1.1em; transition: 0.3s; }
+        nav a:hover { color: #f48fb1; /* Açık Pembe */ border-bottom: 2px solid #f48fb1; }
+
+        /* Konteyner */
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(136, 14, 79, 0.15); }
+        
+        /* Başlıklar */
+        h1 { color: #880e4f; text-align: center; font-size: 2.5em; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #ad1457; font-size: 1.2em; margin-bottom: 30px; }
+        
+        /* Alt Bilgi */
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
+        
+        /* Anasayfa Özel Buton */
+        .btn-main { display: block; width: 200px; margin: 20px auto; padding: 12px; background: linear-gradient(45deg, #880e4f, #d81b60); color: white; text-align: center; text-decoration: none; border-radius: 25px; font-weight: bold; transition: transform 0.2s; }
+        .btn-main:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(216, 27, 96, 0.4); }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
     <div class="container">
-        <h1>Hoşgeldiniz (Anasayfa)</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Anasayfa</a>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="hizmetler.html">Hizmetler</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="iletisim.html">İletişim</a>
-        </nav>
-        <hr>
-        <p>Bu web sayfası Sanallaştırma Platformları dersi ödevi için hazırlanmıştır.</p>
-        <p>Öğrenci: [Senin Adın]</p>
+        <h1>Hoş Geldiniz</h1>
+        <p class="subtitle">Sanallaştırma Platformları Dönem Projesi</p>
+        <hr style="border: 0; height: 1px; background: #f8bbd0; margin: 20px 0;">
+        
+        <div style="text-align: center; padding: 20px;">
+            <p>Bu proje, <strong>Sakarya Uygulamalı Bilimler Üniversitesi</strong> öğrencisi tarafından AWS Cloud altyapısı kullanılarak hazırlanmıştır.</p>
+            <p>Modern web teknolojileri ve bulut bilişim yetkinliklerini sergilemektedir.</p>
+            
+            <a href="hizmetler.html" class="btn-main">Hizmetleri İncele</a>
+        </div>
+
+        <div class="footer">
+            <p>Öğrenci: <strong>[Senin Adın]</strong> | 2025-2026 Güz Dönemi</p>
+        </div>
     </div>
+
 </body>
 </html>

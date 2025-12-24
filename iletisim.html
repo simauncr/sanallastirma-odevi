@@ -2,65 +2,72 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>İletişim - Sanallaştırma Ödevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Sanallaştırma Projesi</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background-color: #f0f0f0; }
-        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
-        .container { background: white; padding: 20px; border-radius: 8px; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fce4ec; color: #333; }
+        nav { background-color: #880e4f; padding: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #f48fb1; }
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(136, 14, 79, 0.15); }
+        h1 { color: #880e4f; text-align: center; }
         
-        /* Form stili */
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
-        input, textarea { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
-        button { background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #0056b3; }
+        /* Form Tasarımı */
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #880e4f; }
+        input, textarea { width: 100%; padding: 12px; box-sizing: border-box; border: 2px solid #f8bbd0; border-radius: 8px; font-family: inherit; transition: 0.3s; }
+        input:focus, textarea:focus { border-color: #d81b60; outline: none; background-color: #fff0f6; }
         
-        .contact-info { background: #e9ecef; padding: 15px; border-radius: 4px; margin-top: 20px; }
+        button { width: 100%; background-color: #880e4f; color: white; padding: 15px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: 0.3s; font-weight: bold; }
+        button:hover { background-color: #c2185b; box-shadow: 0 5px 15px rgba(194, 24, 91, 0.3); }
+        
+        .contact-info { background: #fce4ec; padding: 20px; border-radius: 8px; margin-top: 30px; text-align: center; border: 1px solid #f8bbd0; }
+        .contact-info p { margin: 5px 0; color: #880e4f; }
+
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>İletişim</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Anasayfa</a>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="hizmetler.html">Hizmetler</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="iletisim.html">İletişim</a>
-        </nav>
-        <hr>
-        
-        <p>Projeleriniz veya sorularınız için bizimle iletişime geçebilirsiniz.</p>
 
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <div class="container">
+        <h1>Bizimle İletişime Geçin</h1>
+        
         <form>
             <div class="form-group">
-                <label for="name">Adınız Soyadınız:</label>
-                <input type="text" id="name" name="name" placeholder="Örn: Ahmet Yılmaz">
+                <label>Adınız Soyadınız:</label>
+                <input type="text" placeholder="Adınız...">
             </div>
 
             <div class="form-group">
-                <label for="email">E-posta Adresiniz:</label>
-                <input type="email" id="email" name="email" placeholder="orn@ornek.com">
+                <label>E-posta Adresiniz:</label>
+                <input type="email" placeholder="ornek@email.com">
             </div>
 
             <div class="form-group">
-                <label for="message">Mesajınız:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Mesajınızı buraya yazın..."></textarea>
+                <label>Mesajınız:</label>
+                <textarea rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
             </div>
 
-            <button type="button" onclick="alert('Bu bir ödev sayfasıdır, form gönderilmedi.')">Gönder</button>
+            <button type="button" onclick="alert('Mesajınız başarıyla iletildi! (Simülasyon)')">Gönder</button>
         </form>
 
         <div class="contact-info">
-            <h3>Adres Bilgileri</h3>
-            <p><strong>Adres:</strong> Sakarya Uygulamalı Bilimler Üniversitesi, Serdivan/Sakarya</p>
-            <p><strong>E-posta:</strong> ogrenci@subu.edu.tr</p>
-            <p><strong>Telefon:</strong> +90 264 000 00 00</p>
+            <p>📍 Sakarya Uygulamalı Bilimler Üniversitesi</p>
+            <p>📧 ogrenci@subu.edu.tr</p>
         </div>
 
-        <br>
-        <p><i>Öğrenci: [Senin Adın]</i></p>
+        <div class="footer">
+            <p>Öğrenci: <strong>[Senin Adın]</strong></p>
+        </div>
     </div>
+
 </body>
 </html>

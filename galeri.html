@@ -2,77 +2,64 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Galeri - Sanallaştırma Ödevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri | Sanallaştırma Projesi</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background-color: #f0f0f0; }
-        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
-        .container { background: white; padding: 20px; border-radius: 8px; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fce4ec; color: #333; }
+        nav { background-color: #880e4f; padding: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #f48fb1; }
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(136, 14, 79, 0.15); }
+        h1 { color: #880e4f; text-align: center; margin-bottom: 30px; }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .gallery-item { border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; background: #fff; }
+        .gallery-item:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(136, 14, 79, 0.3); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .desc { padding: 10px; text-align: center; color: #880e4f; font-weight: bold; background: #fce4ec; }
         
-        /* Galeri için basit ızgara (grid) tasarımı */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .gallery-item {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            background: #fff;
-            text-align: center;
-        }
-        .gallery-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        .desc {
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #666;
-        }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
     <div class="container">
         <h1>Proje Galerisi</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Anasayfa</a>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="hizmetler.html">Hizmetler</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="iletisim.html">İletişim</a>
-        </nav>
-        <hr>
-        
-        <p>Proje süreci ve çalışma ortamımızdan kareler:</p>
         
         <div class="gallery">
             <div class="gallery-item">
-                <img src="https://placehold.co/300x200/2196F3/FFFFFF?text=Sunucu+Odasi" alt="Sunucu Odası">
-                <div class="desc">Veri Merkezi Altyapısı</div>
+                <img src="https://placehold.co/400x300/880e4f/FFFFFF?text=Sunucu" alt="Sunucu">
+                <div class="desc">Server Kurulumu</div>
             </div>
             
             <div class="gallery-item">
-                <img src="https://placehold.co/300x200/4CAF50/FFFFFF?text=Kodlama+Ekrani" alt="Kodlama">
-                <div class="desc">HTML Geliştirme Süreci</div>
+                <img src="https://placehold.co/400x300/ad1457/FFFFFF?text=Kodlama" alt="Kod">
+                <div class="desc">HTML/CSS Geliştirme</div>
             </div>
             
             <div class="gallery-item">
-                <img src="https://placehold.co/300x200/FF9800/FFFFFF?text=AWS+Konsol" alt="AWS Panel">
-                <div class="desc">Bulut Yönetim Paneli</div>
+                <img src="https://placehold.co/400x300/d81b60/FFFFFF?text=AWS" alt="AWS">
+                <div class="desc">AWS Paneli</div>
             </div>
             
             <div class="gallery-item">
-                <img src="https://placehold.co/300x200/9C27B0/FFFFFF?text=Toplanti" alt="Toplantı">
-                <div class="desc">Proje Planlama</div>
+                <img src="https://placehold.co/400x300/ec407a/FFFFFF?text=Deploy" alt="Yayın">
+                <div class="desc">Canlı Yayın</div>
             </div>
         </div>
 
-        <br>
-        <p><i>Öğrenci: [Senin Adın]</i></p>
+        <div class="footer">
+            <p>Öğrenci: <strong>[Senin Adın]</strong></p>
+        </div>
     </div>
+
 </body>
 </html>
